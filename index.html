@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
-<>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/main.css"/>
-  <style>
-  div{
-    height: 200px;
-  }
-  </style>
   <script src="/js/main.js"></script>
-  <script>
-    console.log("Welcome!");
-  </script>
   <title>HTML Learning</title>
 </head>
 <body>
-  <div>Hello, World!</div>
-  <a href="about/about.html">
-    <div>
-      <span>about</span>
-      </div> 
-    </a>
-    <img src="/images/logo.png" alt="얼굴">
-    <input type="text">
-    <div>Hello, world!</div>
-    <div>Welcome!</div>
+  <div data-fruit-type="apple">과일바구니</div>
+  <script>
+    let fruit = document.querySelectorAll("div")[0].dataset.fruitType
+    console.log(fruit)
+  </script>
 </body>
 </html>
